@@ -7,6 +7,6 @@ def hello_world():
 
 @app.route('/usr/<username>')
 def usr(username):
-  return username
+  return render_template('user.html', usr = username)
   
 app.run(host='0.0.0.0', port=8080)
