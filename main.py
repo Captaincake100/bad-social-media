@@ -16,5 +16,5 @@ def login():
     return redirect(url_for('usr', usr=user))
   else:
     return render_template('login.html')
-
+print("test")
 app.run(host='0.0.0.0', port=8080)
